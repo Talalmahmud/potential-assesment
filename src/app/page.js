@@ -49,6 +49,24 @@ const projectList = [
   },
 ];
 
+const projectCategoryList = [
+  {
+    title: "All",
+  },
+  {
+    title: "UI/UX",
+  },
+  {
+    title: "Web Design",
+  },
+  {
+    title: "App Design",
+  },
+  {
+    title: "Graphic Design",
+  },
+];
+
 export default function Home() {
   return (
     <div className=" min-w-full  min-h-screen ">
@@ -207,7 +225,7 @@ export default function Home() {
       </div>
 
       {/* services */}
-      <div className="w-[1413px]  mx-auto mt-[200px] flex flex-col gap-6 items-center justify-center">
+      <div className="w-[1413px]  mx-auto mt-[200px] flex flex-col gap-12 items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <p className="text-[65px] font-semibold">Services</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
@@ -222,7 +240,7 @@ export default function Home() {
         </div>
       </div>
       {/* projects */}
-      <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-6 items-center justify-center">
+      <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-12 items-center justify-center">
         <div className="flex flex-col items-center gap-6">
           <p className="text-[65px] font-semibold">My Projects</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
@@ -231,42 +249,15 @@ export default function Home() {
           </p>
 
           <div className="flex gap-4">
-            <button
-              style={{ borderWidth: "0.5px" }}
-              className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
-            >
-              ux
-            </button>
-            <button
-              style={{ borderWidth: "0.5px" }}
-              className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
-            >
-              ux
-            </button>{" "}
-            <button
-              style={{ borderWidth: "0.5px" }}
-              className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
-            >
-              ux
-            </button>{" "}
-            <button
-              style={{ borderWidth: "0.5px" }}
-              className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
-            >
-              ux
-            </button>{" "}
-            <button
-              style={{ borderWidth: "0.5px" }}
-              className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
-            >
-              ux
-            </button>{" "}
-            <button
-              style={{ borderWidth: "0.5px" }}
-              className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
-            >
-              ux
-            </button>
+            {projectCategoryList?.map((item, index) => (
+              <button
+                key={index}
+                style={{ borderWidth: "0.5px" }}
+                className=" px-[20px] py-[10px] text-[24px] active:bg-orange-400 hover:bg-[#FD6F00] hover:text-white active:text-white rounded-[12px] border-[#545454] bg-[#F8F8F8] "
+              >
+                {item?.title}
+              </button>
+            ))}
           </div>
         </div>
         <div className=" w-full flex mt-4 items-center justify-between">
@@ -276,7 +267,7 @@ export default function Home() {
         </div>
       </div>
       {/* testimonials */}
-      <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-6 items-center justify-center">
+      <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-12 items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <p className="text-[65px] font-semibold">Testimonials</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
@@ -296,7 +287,7 @@ export default function Home() {
       </div>
 
       {/* contact */}
-      <div className="w-[932px]  mx-auto mt-[176px] p-6 flex flex-col gap-6 items-center justify-center">
+      <div className="w-[932px]  mx-auto mt-[176px] p-6 flex flex-col gap-12 items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <p className="text-[65px] font-semibold">Lets Design Together</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
