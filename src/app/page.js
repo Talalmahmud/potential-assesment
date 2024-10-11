@@ -225,7 +225,7 @@ export default function Home() {
       </div>
 
       {/* services */}
-      <div className="w-[1413px]  mx-auto mt-[200px] flex flex-col gap-12 items-center justify-center">
+      <div className="w-[1413px]  mx-auto mt-[200px] flex flex-col gap-[64px] items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <p className="text-[65px] font-semibold">Services</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
@@ -241,14 +241,14 @@ export default function Home() {
       </div>
       {/* projects */}
       <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-12 items-center justify-center">
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-12">
           <p className="text-[65px] font-semibold">My Projects</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in. Aliquet donec morbi convallis pretium
           </p>
 
-          <div className="flex gap-4">
+          <div className="  flex gap-4">
             {projectCategoryList?.map((item, index) => (
               <button
                 key={index}
@@ -260,15 +260,15 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className=" w-full flex mt-4 items-center justify-between">
+        <div className="  w-full flex mt-10 items-center justify-between">
           {projectList?.map((item, index) => (
             <ProjectCard key={index} projectDetails={item} />
           ))}
         </div>
       </div>
       {/* testimonials */}
-      <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-12 items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
+      <div className="w-[1423px]  mx-auto mt-[200px] flex flex-col gap-[64px] items-center justify-center">
+        <div className="flex flex-col items-center gap-8">
           <p className="text-[65px] font-semibold">Testimonials</p>
           <p className=" w-[921px] tracking-widest  text-center text-[21px]">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
