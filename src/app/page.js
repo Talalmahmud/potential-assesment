@@ -122,31 +122,31 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-4 w-[538px]">
+        <div className="flex flex-col items-center gap-8 w-[538px]">
           <Image src={"/icons/user.png"} height={617} width={538} alt="" />
           <div className=" flex items-center gap-4">
             <Image
               src={"/icons/facebook.svg"}
               height={32.48}
-              width={43.48}
+              width={32.48}
               alt=""
             />
             <Image
-              src={"/icons/facebook.svg"}
+              src={"/icons/twitter.svg"}
               height={32.48}
-              width={43.48}
+              width={32.48}
               alt=""
             />
             <Image
               src={"/icons/instagram.svg"}
               height={32.48}
-              width={43.48}
+              width={32.48}
               alt=""
             />
             <Image
               src={"/icons/linkedin.svg"}
               height={32.48}
-              width={43.48}
+              width={32.48}
               alt=""
             />
           </div>
@@ -332,25 +332,25 @@ export default function Home() {
           <Image
             src={"/icons/facebook.svg"}
             height={32.48}
-            width={43.48}
+            width={32.48}
             alt=""
           />
           <Image
-            src={"/icons/facebook.svg"}
+            src={"/icons/twitter.svg"}
             height={32.48}
-            width={43.48}
+            width={32.48}
             alt=""
           />
           <Image
             src={"/icons/instagram.svg"}
             height={32.48}
-            width={43.48}
+            width={32.48}
             alt=""
           />
           <Image
             src={"/icons/linkedin.svg"}
             height={32.48}
-            width={43.48}
+            width={32.48}
             alt=""
           />
         </div>
